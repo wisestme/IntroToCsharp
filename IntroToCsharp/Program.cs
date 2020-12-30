@@ -17,7 +17,7 @@ namespace IntroToCsharp
             Console.WriteLine("Please what is your name?");
             string userName = Console.ReadLine();
 
-            Console.WriteLine("Hello " + userName);
+            Console.WriteLine("Hello {0}", userName);
         }
     }
 }
