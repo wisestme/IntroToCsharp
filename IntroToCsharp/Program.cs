@@ -13,6 +13,11 @@ namespace IntroToCsharp
         {
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
+
+            Console.WriteLine("Please what is your name?");
+            string userName = Console.ReadLine();
+
+            Console.WriteLine("Hello " + userName);
         }
     }
 }
