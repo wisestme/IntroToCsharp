@@ -19,6 +19,12 @@ namespace IntroToCsharp
             string lastName = "Nwagwu";
 
             Console.WriteLine("Hello {0}, {1}", firstName, lastName);
+
+            int Number = 15;
+
+            bool IsNumber10 = Number == 10 ? true : false;
+
+            Console.WriteLine("Number == 10 is {0}", IsNumber10);
         }
     }
 }
