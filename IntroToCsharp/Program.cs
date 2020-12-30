@@ -15,9 +15,10 @@ namespace IntroToCsharp
             AnotherMethod();
 
             Console.WriteLine("Please what is your name?");
-            string userName = Console.ReadLine();
+            string firstName = Console.ReadLine();
+            string lastName = "Nwagwu";
 
-            Console.WriteLine("Hello {0}", userName);
+            Console.WriteLine("Hello {0}, {1}", firstName, lastName);
         }
     }
 }
