@@ -21,6 +21,15 @@ namespace IntroToCsharp
             EvenNumbers[2] = 4;
 
             Console.WriteLine(EvenNumbers[1]);
+
+            int[] OddNumbers = new int[4];
+
+            OddNumbers[0] = 1;
+            OddNumbers[1] = 3;
+            OddNumbers[2] = 5;
+            OddNumbers[3] = OddNumbers[2] + 2;
+
+            Console.WriteLine(OddNumbers[3]);
         }
     }
 }
