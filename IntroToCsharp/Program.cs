@@ -14,22 +14,17 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
 
-            int[] EvenNumbers = new int[3];
+            Console.WriteLine("Please enter a number");
+            int.TryParse(Console.ReadLine(), out int userNumber);
 
-            EvenNumbers[0] = 0;
-            EvenNumbers[1] = 2;
-            EvenNumbers[2] = 4;
-
-            Console.WriteLine(EvenNumbers[1]);
-
-            int[] OddNumbers = new int[4];
-
-            OddNumbers[0] = 1;
-            OddNumbers[1] = 3;
-            OddNumbers[2] = 5;
-            OddNumbers[3] = OddNumbers[2] + 2;
-
-            Console.WriteLine(OddNumbers[3]);
+            if(userNumber % 2 == 0)
+            {
+                Console.WriteLine("You entered an even number");
+            }
+            else
+            {
+                Console.WriteLine("You entered an odd number");
+            }
         }
     }
 }
