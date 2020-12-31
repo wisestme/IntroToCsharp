@@ -40,10 +40,23 @@ namespace IntroToCsharp
                 Console.WriteLine("User made no selection");
             }
 
-            float f = 100.98f;
-            int i = Convert.ToInt32(f);
+            //float f = 100.98f;
+            //int i = Convert.ToInt32(f);
 
-            Console.WriteLine(i);
+            //Console.WriteLine(i);
+
+            string numberString = "100";
+
+            bool ConversionSuccess = int.TryParse(numberString, out int Result);
+            
+            if(ConversionSuccess)
+            {
+                Console.WriteLine(Result);
+            }
+            else
+            {
+                Console.WriteLine("type conversion not posible. please enter a vali number");
+            }
         }
     }
 }
