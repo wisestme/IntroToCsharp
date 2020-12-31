@@ -39,6 +39,11 @@ namespace IntroToCsharp
             {
                 Console.WriteLine("User made no selection");
             }
+
+            int i = 100;
+            float f = i;
+
+            Console.WriteLine(f);
         }
     }
 }
