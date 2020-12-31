@@ -40,10 +40,10 @@ namespace IntroToCsharp
                 Console.WriteLine("User made no selection");
             }
 
-            int i = 100;
-            float f = i;
+            float f = 100.98f;
+            int i = Convert.ToInt32(f);
 
-            Console.WriteLine(f);
+            Console.WriteLine(i);
         }
     }
 }
