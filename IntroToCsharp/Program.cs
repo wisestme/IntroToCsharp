@@ -31,7 +31,33 @@ namespace IntroToCsharp
             {
                 Console.WriteLine("Please enter a valid number");
             }
-            
+
+            Console.WriteLine("Please enter another number");
+
+            bool ConvertSecondNumber = int.TryParse(Console.ReadLine(), out int SecondNumber);
+
+            if (ConvertSecondNumber)
+            {
+                switch (SecondNumber)
+                {
+                    case 10:
+                        Console.WriteLine("Your second number is 10");
+                        break;
+                    case 20:
+                        Console.WriteLine("Your second number is 20");
+                        break;
+                    case 30:
+                        Console.WriteLine("Your second number is 30");
+                        break;
+                    default:
+                        Console.WriteLine("Your number is neither 10, 20 nor 30");
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Please enter a valid number");
+            }
         }
     }
 }
