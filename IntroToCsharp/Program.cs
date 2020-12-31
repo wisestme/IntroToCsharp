@@ -25,6 +25,20 @@ namespace IntroToCsharp
             bool IsNumber10 = Number == 10 ? true : false;
 
             Console.WriteLine("Number == 10 is {0}", IsNumber10);
+
+            bool? AreYouMajor = null;
+            if(AreYouMajor == true)
+            {
+                Console.WriteLine("User is a major");
+            }
+            else if(AreYouMajor == false)
+            {
+                Console.WriteLine("User is not a major");
+            }
+            else
+            {
+                Console.WriteLine("User made no selection");
+            }
         }
     }
 }
