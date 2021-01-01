@@ -56,6 +56,32 @@ namespace IntroToCsharp
             {
                 Console.WriteLine("Please enter a valid number");
             }
+
+            Console.WriteLine("Welcome to my cofee shop. please select your choice");
+            Console.WriteLine("1 - Small, 2 - Medium, 3 - Large");
+            int TotalCofeeCost = 0;
+            string UserChoiceString = Console.ReadLine();
+
+            int.TryParse(UserChoiceString, out int UserChoice);
+
+            switch (UserChoice)
+            {
+                case 1:
+                    TotalCofeeCost += 1;
+                    break;
+                case 2:
+                    TotalCofeeCost += 2;
+                    break;
+                case 3:
+                    TotalCofeeCost += 3;
+                    break;
+                default:
+                    Console.WriteLine("invalid selection");
+                    break;
+            }
+
+            Console.WriteLine("Thank you for shopping with us");
+            Console.WriteLine($"Bill Amount = {TotalCofeeCost}");
         }
     }
 }
