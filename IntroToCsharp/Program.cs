@@ -14,43 +14,11 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
 
-            
-            string UserAnswer;
-            do
-            {
-                Console.WriteLine("Please enter your target number");
-                string UserTargetString = Console.ReadLine();
-
-                bool ConvertTarget = int.TryParse(UserTargetString, out int UserTarget);
-
-                if (ConvertTarget)
-                {
-                    int count = 0;
-                    while (count < UserTarget)
-                    {
-                        Console.WriteLine(count);
-                        count++;
-                    }
-
-                }
-                else
-                {
-                    Console.WriteLine("Please enter a valid number");
-                }
-                
-                do
-                {
-                    Console.WriteLine("Do you want to continue? -Yes or No ?");
-                    UserAnswer = Console.ReadLine();
-
-                    if (UserAnswer.ToLower() != "yes" && UserAnswer.ToLower() != "no")
-                    {
-                        Console.WriteLine("Invalid choice, please say Yes or No");
-                    }
-                } while (UserAnswer.ToLower() != "yes" && UserAnswer.ToLower() != "no");
-            } while (UserAnswer.ToLower() == "yes");
-            
-            
+            int[] Numbers = new int[3];
+            Numbers[0] = 101;
+            Numbers[1] = 102;
+            Numbers[2] = 103;
+   
         }
     }
 }
