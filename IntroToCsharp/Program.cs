@@ -57,9 +57,11 @@ namespace IntroToCsharp
                 Console.WriteLine("Please enter a valid number");
             }
 
-            Console.WriteLine("Welcome to my cofee shop. please select your choice");
+            int TotalCoffeeCost = 0;
+            BuyCoffee:
+            Console.WriteLine("Welcome to my coffee shop. please select your choice");
             Console.WriteLine("1 - Small, 2 - Medium, 3 - Large");
-            int TotalCofeeCost = 0;
+            
             string UserChoiceString = Console.ReadLine();
 
             int.TryParse(UserChoiceString, out int UserChoice);
@@ -67,21 +69,34 @@ namespace IntroToCsharp
             switch (UserChoice)
             {
                 case 1:
-                    TotalCofeeCost += 1;
+                    TotalCoffeeCost += 1;
                     break;
                 case 2:
-                    TotalCofeeCost += 2;
+                    TotalCoffeeCost += 2;
                     break;
                 case 3:
-                    TotalCofeeCost += 3;
+                    TotalCoffeeCost += 3;
                     break;
                 default:
                     Console.WriteLine("invalid selection");
                     break;
             }
 
+            Console.WriteLine("Would you want to buy another coffee? - Yes or No");
+            string BuyAgain = Console.ReadLine();
+
+            if(BuyAgain.ToLower() == "yes")
+            {
+                goto BuyCoffee;
+            }
+            else
+            {
+                goto end;
+            }
+
+            end:
             Console.WriteLine("Thank you for shopping with us");
-            Console.WriteLine($"Bill Amount = {TotalCofeeCost}");
+            Console.WriteLine($"Bill Amount = {TotalCoffeeCost}");
         }
     }
 }
