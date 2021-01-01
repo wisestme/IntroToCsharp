@@ -19,11 +19,9 @@ namespace IntroToCsharp
             Numbers[1] = 102;
             Numbers[2] = 103;
 
-            int count = 0;
-            while(count < Numbers.Length)
+            for(int count = 0; count < Numbers.Length; count++)
             {
                 Console.WriteLine(Numbers[count]);
-                count++;
             }
         }
     }
