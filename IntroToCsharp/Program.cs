@@ -23,6 +23,16 @@ namespace IntroToCsharp
             {
                 Console.WriteLine(Number);
             }
+
+            for(int i = 0; i < 20; i++)
+            {
+                if (i == 10)
+                {
+                    continue;
+                }
+                Console.WriteLine(i);
+                
+            }
         }
     }
 }
