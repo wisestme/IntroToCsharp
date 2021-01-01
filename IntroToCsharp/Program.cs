@@ -65,7 +65,7 @@ namespace IntroToCsharp
             string UserChoiceString = Console.ReadLine();
 
             int.TryParse(UserChoiceString, out int UserChoice);
-
+        
             switch (UserChoice)
             {
                 case 1:
@@ -82,6 +82,7 @@ namespace IntroToCsharp
                     break;
             }
 
+            Decision:
             Console.WriteLine("Would you want to buy another coffee? - Yes or No");
             string BuyAgain = Console.ReadLine();
 
@@ -89,9 +90,14 @@ namespace IntroToCsharp
             {
                 goto BuyCoffee;
             }
-            else
+            else if(BuyAgain.ToLower() == "no")
             {
                 goto end;
+            }
+            else
+            {
+                Console.WriteLine("Invalid selection. Please try again");
+                goto Decision;
             }
 
             end:
