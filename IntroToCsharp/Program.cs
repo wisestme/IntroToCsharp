@@ -19,9 +19,9 @@ namespace IntroToCsharp
             Numbers[1] = 102;
             Numbers[2] = 103;
 
-            for(int count = 0; count < Numbers.Length; count++)
+            foreach(int Number in Numbers)
             {
-                Console.WriteLine(Numbers[count]);
+                Console.WriteLine(Number);
             }
         }
     }
