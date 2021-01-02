@@ -14,12 +14,12 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
             Program program = new Program();
-            program.EvenNumbers();
+            program.EvenNumbers(30);
         }
 
-        public void EvenNumbers()
+        public void EvenNumbers(int stopNumber)
         {
-            for (int i = 0; i <= 20; i += 2)
+            for (int i = 0; i <= stopNumber; i += 2)
             {
                 Console.WriteLine(i);
             }
