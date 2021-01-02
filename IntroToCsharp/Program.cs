@@ -15,6 +15,8 @@ namespace IntroToCsharp
             AnotherMethod();
             Program program = new Program();
             program.EvenNumbers(30);
+            int sum = Add(40, 60);
+            Console.WriteLine(sum);
         }
 
         public void EvenNumbers(int stopNumber)
@@ -23,6 +25,12 @@ namespace IntroToCsharp
             {
                 Console.WriteLine(i);
             }
+        }
+
+        public static int Add(int firstNumber, int secondNumber)
+        {
+            return firstNumber + secondNumber;
+           
         }
     }
 }
