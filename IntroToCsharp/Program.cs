@@ -13,25 +13,15 @@ namespace IntroToCsharp
         {
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
+            Program program = new Program();
+            program.EvenNumbers();
+        }
 
-            int[] Numbers = new int[3];
-            Numbers[0] = 101;
-            Numbers[1] = 102;
-            Numbers[2] = 103;
-
-            foreach(int Number in Numbers)
+        public void EvenNumbers()
+        {
+            for (int i = 0; i <= 20; i += 2)
             {
-                Console.WriteLine(Number);
-            }
-
-            for(int i = 0; i < 20; i++)
-            {
-                if (i == 10)
-                {
-                    continue;
-                }
                 Console.WriteLine(i);
-                
             }
         }
     }
