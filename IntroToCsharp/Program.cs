@@ -1,5 +1,5 @@
 ﻿using System;
-
+using IntroToCsharp.ProjectA.TeamA;
 
 namespace IntroToCsharp
 {
@@ -14,7 +14,7 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
             Program program = new Program();
-            ProjectA.TeamA.ClassA.Print();
+            ClassA.Print();
         }    
     }
 
