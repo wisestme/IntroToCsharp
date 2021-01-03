@@ -14,23 +14,14 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
             Program program = new Program();
-            program.EvenNumbers(30);
-            int sum = Add(40, 60);
-            Console.WriteLine(sum);
+            
         }
 
-        public void EvenNumbers(int stopNumber)
+        public static void SimpleMethod(int j)
         {
-            for (int i = 0; i <= stopNumber; i += 2)
-            {
-                Console.WriteLine(i);
-            }
+            j = 101;
         }
 
-        public static int Add(int firstNumber, int secondNumber)
-        {
-            return firstNumber + secondNumber;
-           
-        }
+        
     }
 }
