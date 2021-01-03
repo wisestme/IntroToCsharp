@@ -15,17 +15,18 @@ namespace IntroToCsharp
             AnotherMethod();
             Program program = new Program();
 
-            int i = 0;
-            SimpleMethod(ref i);
+            //int Add;
+            //int Multiply;
 
-            Console.WriteLine(i);
+            Calculate(10, 20, out int Add, out int Multiply);
+            Console.WriteLine($"Sum = {Add} and Product = {Multiply}");
         }
 
-        public static void SimpleMethod(ref int j)
+        public static void Calculate(int FN, int SN, out int Sum, out int Product)
         {
-            j = 101;
+            Sum = FN + SN;
+            Product = FN * SN;
         }
-
         
     }
 }
