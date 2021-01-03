@@ -1,5 +1,7 @@
 ﻿using System;
 using IntroToCsharp.ProjectA.TeamA;
+using IntroToCsharp.ProjectA.TeamB;
+
 
 namespace IntroToCsharp
 {
@@ -14,7 +16,9 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
             Program program = new Program();
-            ClassA.Print();
+            //ClassA.Print();
+            ProjectA.TeamA.ClassA.Print();
+            ProjectA.TeamB.ClassA.Print();
         }    
     }
 
@@ -27,6 +31,20 @@ namespace IntroToCsharp
                 public static void Print()
                 {
                     Console.WriteLine("Print method for Team A");
+                }
+            }
+        }
+    }
+
+    namespace ProjectA
+    {
+        namespace TeamB
+        {
+            class ClassA
+            {
+                public static void Print()
+                {
+                    Console.WriteLine("Print method for Team B");
                 }
             }
         }
