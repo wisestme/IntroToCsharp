@@ -16,12 +16,12 @@ namespace IntroToCsharp
             Program program = new Program();
 
             int i = 0;
-            SimpleMethod(i);
+            SimpleMethod(ref i);
 
             Console.WriteLine(i);
         }
 
-        public static void SimpleMethod(int j)
+        public static void SimpleMethod(ref int j)
         {
             j = 101;
         }
