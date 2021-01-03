@@ -1,6 +1,6 @@
 ﻿using System;
-using IntroToCsharp.ProjectA.TeamA;
-using IntroToCsharp.ProjectA.TeamB;
+using PATA = IntroToCsharp.ProjectA.TeamA;
+using PATB = IntroToCsharp.ProjectA.TeamB;
 
 
 namespace IntroToCsharp
@@ -17,8 +17,8 @@ namespace IntroToCsharp
             AnotherMethod();
             Program program = new Program();
             //ClassA.Print();
-            ProjectA.TeamA.ClassA.Print();
-            ProjectA.TeamB.ClassA.Print();
+            PATA.ClassA.Print();
+            PATB.ClassA.Print();
         }    
     }
 
