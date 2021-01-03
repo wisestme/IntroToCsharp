@@ -14,27 +14,21 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
             Program program = new Program();
+            ProjectA.TeamA.ClassA.Print();
+        }    
+    }
 
-            //int Add;
-            //int Multiply;
-            int[] Numbers = new int[3];
-
-            Numbers[0] = 101;
-            Numbers[1] = 102;
-            Numbers[2] = 103;
-
-            ParamsMethod(Numbers);
-            
-        }
-
-        public static void ParamsMethod(params int[] Numbers)
+    namespace ProjectA
+    {
+        namespace TeamA
         {
-            Console.WriteLine("Theere are {0} elements",Numbers.Length);
-            foreach (int i in Numbers)
+            class ClassA
             {
-                Console.WriteLine(i);
+                public static void Print()
+                {
+                    Console.WriteLine("Print method for Team A");
+                }
             }
         }
-        
     }
 }
