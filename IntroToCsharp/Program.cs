@@ -13,6 +13,11 @@ namespace IntroToCsharp
             _firstName = FirstName;
             _lastName = LastName;
         }
+
+        public void PrintFullName()
+        {
+            Console.WriteLine($"Full Name = {_firstName} {_lastName}");
+        }
     }
     class Program
     {
@@ -25,7 +30,10 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
             Program program = new Program();
+            Customer customerOne = new Customer("Chijioke", "Nwagwu");
 
+            //customerOne.PrintFullName();
+            
 
         }
     }
