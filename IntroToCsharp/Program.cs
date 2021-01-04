@@ -5,9 +5,9 @@ namespace IntroToCsharp
 {
     public class Employee
     {
-        string FirstName;
-        string LastName;
-        string Email;
+        public string FirstName;
+        public string LastName;
+        public string Email;
 
         public void PrintFullName()
         {
@@ -17,12 +17,12 @@ namespace IntroToCsharp
 
     public class FullTimeEmployee : Employee
     {
-        float YearlySalary;
+        public float YearlySalary;
     }
 
     public class PartTimeEmployee : Employee
     {
-        float HourlySalary;
+        public float HourlySalary;
     }
     class Program
     {
