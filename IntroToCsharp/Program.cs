@@ -7,6 +7,12 @@ namespace IntroToCsharp
     {
         string _firstName;
         string _lastName;
+
+        public Customer(string FirstName, string LastName)
+        {
+            _firstName = FirstName;
+            _lastName = LastName;
+        }
     }
     class Program
     {
