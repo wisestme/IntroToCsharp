@@ -32,7 +32,7 @@ namespace IntroToCsharp
             Program program = new Program();
             Customer customerOne = new Customer("Chijioke", "Nwagwu");
 
-            //customerOne.PrintFullName();
+            customerOne.PrintFullName();
             
 
         }
