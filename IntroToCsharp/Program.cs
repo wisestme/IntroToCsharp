@@ -1,10 +1,13 @@
 ﻿using System;
-using PATA = IntroToCsharp.ProjectA.TeamA;
-using PATB = IntroToCsharp.ProjectA.TeamB;
 
 
 namespace IntroToCsharp
 {
+    class Customer
+    {
+        string _firstName;
+        string _lastName;
+    }
     class Program
     {
         static void AnotherMethod()
@@ -16,37 +19,10 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
             Program program = new Program();
-            //ClassA.Print();
-            PATA.ClassA.Print();
-            PATB.ClassA.Print();
-        }    
-    }
 
-    namespace ProjectA
-    {
-        namespace TeamA
-        {
-            class ClassA
-            {
-                public static void Print()
-                {
-                    Console.WriteLine("Print method for Team A");
-                }
-            }
-        }
-    }
 
-    namespace ProjectA
-    {
-        namespace TeamB
-        {
-            class ClassA
-            {
-                public static void Print()
-                {
-                    Console.WriteLine("Print method for Team B");
-                }
-            }
         }
     }
 }
+
+    
