@@ -35,6 +35,12 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
             Program program = new Program();
+
+            FullTimeEmployee FTE = new FullTimeEmployee();
+
+            FTE.FirstName = "Chijioke";
+            FTE.LastName = "Nwagwu";
+            FTE.Email = "wyhzest@wisestmail.com";
         }
     }
 }
