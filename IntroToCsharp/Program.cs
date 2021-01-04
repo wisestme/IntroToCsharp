@@ -5,9 +5,13 @@ namespace IntroToCsharp
 {
     class Circle
     {
-        float _PI = 3.141F;
+        static float _PI;
         int _Radius;
 
+        static Circle()
+        {
+            _PI = 3.141F;
+        }
         public Circle(int Radius)
         {
             _Radius = Radius;
