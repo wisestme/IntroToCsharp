@@ -3,20 +3,19 @@
 
 namespace IntroToCsharp
 {
-    class Customer
+    class Circle
     {
-        string _firstName;
-        string _lastName;
+        float _PI = 3.141F;
+        int _Radius;
 
-        public Customer(string FirstName, string LastName)
+        public Circle(int Radius)
         {
-            _firstName = FirstName;
-            _lastName = LastName;
+            _Radius = Radius;
         }
 
-        public void PrintFullName()
+        public float CalculateArea()
         {
-            Console.WriteLine($"Full Name = {_firstName} {_lastName}");
+            return _PI * _Radius * _Radius;
         }
     }
     class Program
@@ -30,9 +29,7 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
             Program program = new Program();
-            Customer customerOne = new Customer("Chijioke", "Nwagwu");
-
-            customerOne.PrintFullName();
+            
             
 
         }
