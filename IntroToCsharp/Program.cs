@@ -29,8 +29,11 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
             Program program = new Program();
-            
-            
+
+            Circle circleOne = new Circle(5);
+
+            float circleOneArea = circleOne.CalculateArea();
+            Console.WriteLine(($"Area of circle 1 is {circleOneArea}"));
 
         }
     }
