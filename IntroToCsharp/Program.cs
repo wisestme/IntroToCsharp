@@ -35,6 +35,9 @@ namespace IntroToCsharp
             float circleOneArea = circleOne.CalculateArea();
             Console.WriteLine(($"Area of circle 1 is {circleOneArea}"));
 
+            Circle circleTwo = new Circle(6);
+            float circleTwoArea = circleTwo.CalculateArea();
+            Console.WriteLine($"Area of circle 2 is {circleTwoArea}");
         }
     }
 }
