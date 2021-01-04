@@ -11,7 +11,7 @@ namespace IntroToCsharp
 
         public void PrintFullName()
         {
-
+            Console.WriteLine($"{FirstName} {LastName}");
         }
     }
 
@@ -41,6 +41,7 @@ namespace IntroToCsharp
             FTE.FirstName = "Chijioke";
             FTE.LastName = "Nwagwu";
             FTE.Email = "wyhzest@wisestmail.com";
+            FTE.PrintFullName();
         }
     }
 }
