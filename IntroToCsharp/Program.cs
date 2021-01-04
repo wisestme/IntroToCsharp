@@ -41,7 +41,13 @@ namespace IntroToCsharp
             FTE.FirstName = "Chijioke";
             FTE.LastName = "Nwagwu";
             FTE.Email = "wyhzest@wisestmail.com";
+            FTE.YearlySalary = 500;
             FTE.PrintFullName();
+
+            PartTimeEmployee PTE = new PartTimeEmployee();
+            PTE.FirstName = "PartChiji";
+            PTE.LastName = "PartNwa";
+            PTE.PrintFullName();
         }
     }
 }
