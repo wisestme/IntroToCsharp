@@ -3,24 +3,26 @@
 
 namespace IntroToCsharp
 {
-    class Circle
+    public class Employee
     {
-        static float _PI;
-        int _Radius;
+        string FirstName;
+        string LastName;
+        string Email;
 
-        static Circle()
+        public void PrintFullName()
         {
-            _PI = 3.141F;
-        }
-        public Circle(int Radius)
-        {
-            _Radius = Radius;
-        }
 
-        public float CalculateArea()
-        {
-            return _PI * _Radius * _Radius;
         }
+    }
+
+    public class FullTimeEmployee : Employee
+    {
+        float YearlySalary;
+    }
+
+    public class PartTimeEmployee : Employee
+    {
+        float HourlySalary;
     }
     class Program
     {
@@ -33,15 +35,6 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
             Program program = new Program();
-
-            Circle circleOne = new Circle(5);
-
-            float circleOneArea = circleOne.CalculateArea();
-            Console.WriteLine(($"Area of circle 1 is {circleOneArea}"));
-
-            Circle circleTwo = new Circle(6);
-            float circleTwoArea = circleTwo.CalculateArea();
-            Console.WriteLine($"Area of circle 2 is {circleTwoArea}");
         }
     }
 }
