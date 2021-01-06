@@ -23,6 +23,10 @@ namespace IntroToCsharp
     public class PartTimeEmployee : Employee
     {
         public float HourlySalary;
+        public new void PrintFullName()
+        {
+            Console.WriteLine($"{FirstName} {LastName} - Contractor");
+        }
     }
     class Program
     {
