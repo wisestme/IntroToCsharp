@@ -53,6 +53,7 @@ namespace IntroToCsharp
             PTE.FirstName = "PartChiji";
             PTE.LastName = "PartNwa";
             PTE.PrintFullName();
+            ((Employee)PTE).PrintFullName();
         }
     }
 }
