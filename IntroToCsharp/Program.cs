@@ -48,6 +48,11 @@ namespace IntroToCsharp
             employees[1] = new PartTimeEmployee();
             employees[2] = new FullTimeEmployee();
             employees[3] = new TemporaryEmployee();
+
+            foreach (Employee employee in employees)
+            {
+                employee.PrintFullName();
+            }
         }
     }
 }
