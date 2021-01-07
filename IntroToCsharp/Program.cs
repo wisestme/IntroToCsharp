@@ -16,7 +16,20 @@ namespace IntroToCsharp
         
     }
 
+    public class PartTimeEmployee : Employee
+    {
 
+    }
+
+    public class FullTimeEmployee : Employee
+    {
+
+    }
+
+    public class TemporaryEmployee : Employee
+    {
+
+    }
     
     class Program
     {
