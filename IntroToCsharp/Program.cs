@@ -40,7 +40,11 @@ namespace IntroToCsharp
         static void Main()
         {
             Console.WriteLine("Learning C# again.");
-            AnotherMethod();    
+            AnotherMethod();
+
+            Employee[] employees = new Employee[4];
+
+            //employees[1] = new Employee();
         }
     }
 }
