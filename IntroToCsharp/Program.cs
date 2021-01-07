@@ -13,7 +13,7 @@ namespace IntroToCsharp
 
     public class DerivedClass : BaseClass
     {
-        public override void Print()
+        public new void Print()
         {
             Console.WriteLine("I am a Derived Class Print Method");
         }
