@@ -3,43 +3,21 @@
 
 namespace IntroToCsharp
 {
-    public class Employee
+    public class BaseClass
     {
-        public string FirstName = "FN";
-        public string LastName = "LN";
-        
-        public virtual void PrintFullName()
+        public virtual void Print()
         {
-            Console.WriteLine($"{FirstName} {LastName}");
-        }
-
-        
-    }
-
-    public class PartTimeEmployee : Employee
-    {
-        public override void PrintFullName()
-        {
-            Console.WriteLine($"{FirstName} {LastName} - Part Time");
+            Console.WriteLine("I am a Base Class Print Method");
         }
     }
 
-    public class FullTimeEmployee : Employee
+    public class DerivedClass : BaseClass
     {
-        public override void PrintFullName()
+        public override void Print()
         {
-            Console.WriteLine($"{FirstName} {LastName} - Full Time");
+            Console.WriteLine("I am a Derived Class Print Method");
         }
     }
-
-    public class TemporaryEmployee : Employee
-    {
-        public override void PrintFullName()
-        {
-            Console.WriteLine($"{FirstName} {LastName} - Temporal");
-        }
-    }
-    
     class Program
     {
         static void AnotherMethod()
@@ -51,17 +29,8 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
 
-            Employee[] employees = new Employee[4];
-
-            employees[0] = new Employee();
-            employees[1] = new PartTimeEmployee();
-            employees[2] = new FullTimeEmployee();
-            employees[3] = new TemporaryEmployee();
-
-            foreach (Employee employee in employees)
-            {
-                employee.PrintFullName();
-            }
+            BaseClass BC = new DerivedClass();
+            BC.Print();
         }
     }
 }
