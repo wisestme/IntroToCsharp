@@ -5,30 +5,19 @@ namespace IntroToCsharp
 {
     public class Employee
     {
-        public string FirstName;
-        public string LastName;
-        public string Email;
-
+        public string FirstName = "FN";
+        public string LastName = "LN";
+        
         public void PrintFullName()
         {
             Console.WriteLine($"{FirstName} {LastName}");
         }
+
+        
     }
 
-    public class FullTimeEmployee : Employee
-    {
-        public float YearlySalary;
-    }
 
-    public class PartTimeEmployee : Employee
-    {
-        public float HourlySalary;
-        public new void PrintFullName()
-        {
-            Console.WriteLine($"{FirstName} {LastName} - Contractor");
-            base.PrintFullName();
-        }
-    }
+    
     class Program
     {
         static void AnotherMethod()
@@ -38,22 +27,7 @@ namespace IntroToCsharp
         static void Main()
         {
             Console.WriteLine("Learning C# again.");
-            AnotherMethod();
-            Program program = new Program();
-
-            FullTimeEmployee FTE = new FullTimeEmployee();
-
-            FTE.FirstName = "Chijioke";
-            FTE.LastName = "Nwagwu";
-            FTE.Email = "wyhzest@wisestmail.com";
-            FTE.YearlySalary = 500;
-            FTE.PrintFullName();
-
-            PartTimeEmployee PTE = new PartTimeEmployee();
-            PTE.FirstName = "PartChiji";
-            PTE.LastName = "PartNwa";
-            PTE.PrintFullName();
-            ((Employee)PTE).PrintFullName();
+            AnotherMethod();    
         }
     }
 }
