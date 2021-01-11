@@ -2,24 +2,16 @@
 
 
 namespace IntroToCsharp
-{
-    public class BaseClass
+{    
+    public class Student
     {
-        public virtual void Print()
-        {
-            Console.WriteLine("I am a Base Class Print Method");
-        }
-    }
-
-    public class DerivedClass : BaseClass
-    {
-        public new void Print()
-        {
-            Console.WriteLine("I am a Derived Class Print Method");
-        }
+        public int ID;
+        public string Name;
+        public int Passmark;
     }
     class Program
     {
+        
         static void AnotherMethod()
         {
             Console.WriteLine("Learning C# in another method.");
@@ -29,8 +21,12 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
 
-            BaseClass BC = new DerivedClass();
-            BC.Print();
+            Student firstStudent = new Student();
+            firstStudent.ID = -20;
+            firstStudent.Name = null;
+            firstStudent.Passmark = 0;
+
+            Console.WriteLine($"ID = {firstStudent.ID}, and Passmark = {firstStudent.Passmark} while Name = {firstStudent.Name}");
         }
     }
 }
