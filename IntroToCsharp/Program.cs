@@ -9,14 +9,14 @@ namespace IntroToCsharp
         private string _name;
         private int _passmark;
 
-        public void SetPassmark(int Passmark)
-        {
-            if(Passmark != 35)
-            {
-                throw new Exception("Passmark must be equal to 35");
-            }
-            this._passmark = Passmark;
-        }
+        //public void SetPassmark(int Passmark)
+        //{
+        //    if(Passmark != 35)
+        //    {
+        //        throw new Exception("Passmark must be equal to 35");
+        //    }
+        //    this._passmark = Passmark;
+        //}
 
         public int GetPassmark()
         {
