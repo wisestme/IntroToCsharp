@@ -9,6 +9,19 @@ namespace IntroToCsharp
         private string _name;
         private int _passmark;
 
+        public void SetName(string Name)
+        {
+            if (string.IsNullOrEmpty(Name))
+            {
+                throw new Exception("Name cannot be null");
+            }
+            this._name = Name;
+        }
+
+        public string GetName()
+        {
+            return this._name;
+        }
         public void SetId(int Id)
         {
             if (Id <= 0)
