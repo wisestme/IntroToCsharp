@@ -5,9 +5,9 @@ namespace IntroToCsharp
 {    
     public class Student
     {
-        public int ID;
-        public string Name;
-        public int Passmark;
+        private int ID;
+        private string Name;
+        private int Passmark;
     }
     class Program
     {
