@@ -9,6 +9,20 @@ namespace IntroToCsharp
         private string _name;
         private int _passmark;
 
+        public void SetPassmark(int Passmark)
+        {
+            if(Passmark != 35)
+            {
+                throw new Exception("Passmark must be equal to 35");
+            }
+            this._passmark = Passmark;
+        }
+
+        public int GetPassmark()
+        {
+            return this._passmark;
+        }
+
         public void SetName(string Name)
         {
             if (string.IsNullOrEmpty(Name))
@@ -52,8 +66,10 @@ namespace IntroToCsharp
 
             Student firstStudent = new Student();
             firstStudent.SetId(100);
+            firstStudent.SetName("Chijioke");
+            firstStudent.SetPassmark(35);
 
-            Console.WriteLine($"ID = {firstStudent.GetId()}");
+            Console.WriteLine($"ID = {firstStudent.GetId()}, and Name = {firstStudent.GetName()} and Passmark = {firstStudent.GetPassmark()}");
         }
     }
 }
