@@ -8,6 +8,8 @@ namespace IntroToCsharp
         private int _id;
         private string _name;
         private int _passmark = 35;
+        private string _city;
+        private string _email;
 
         //public void SetPassmark(int Passmark)
         //{
@@ -18,6 +20,29 @@ namespace IntroToCsharp
         //    this._passmark = Passmark;
         //}
 
+        public string City
+        {
+            get
+            {
+                return this._city;
+            }
+            set
+            {
+                this._city = value;
+            }
+        }
+
+        public string Email
+        {
+            get
+            {
+                return this._email;
+            }
+            set
+            {
+                this._email = value;
+            }
+        }
         public int Passmark
         {
             get
