@@ -7,7 +7,7 @@ namespace IntroToCsharp
     {
         private int _id;
         private string _name;
-        private int _passmark;
+        private int _passmark = 35;
 
         //public void SetPassmark(int Passmark)
         //{
@@ -18,37 +18,50 @@ namespace IntroToCsharp
         //    this._passmark = Passmark;
         //}
 
-        public int GetPassmark()
+        public int Passmark
         {
+            get
+            {
             return this._passmark;
-        }
-
-        public void SetName(string Name)
-        {
-            if (string.IsNullOrEmpty(Name))
-            {
-                throw new Exception("Name cannot be null");
             }
-            this._name = Name;
         }
 
-        public string GetName()
+        public string Name
         {
-            return this._name;
-        }
-        public void SetId(int Id)
-        {
-            if (Id <= 0)
+            set
             {
-                throw new Exception("Student Id must be greater than zero");
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new Exception("Name cannot be null");
+                }
+                this._name = value;
             }
-            this._id = Id;
+
+            get
+            {
+                return this._name;
+            }
+            
         }
 
-        public int  GetId()
+        public int Id
         {
-            return this._id;
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new Exception("Student Id must be greater than zero");
+                }
+                this._id = value;
+            }
+            get
+            {
+                return this._id;
+            }
+            
         }
+
+        
     }
 
     
@@ -65,11 +78,11 @@ namespace IntroToCsharp
             AnotherMethod();
 
             Student firstStudent = new Student();
-            firstStudent.SetId(100);
-            firstStudent.SetName("Chijioke");
-            firstStudent.SetPassmark(35);
+            firstStudent.Id = 100;
+            firstStudent.Name = "Chijioke";
+            //firstStudent.Passmark = 35;
 
-            Console.WriteLine($"ID = {firstStudent.GetId()}, and Name = {firstStudent.GetName()} and Passmark = {firstStudent.GetPassmark()}");
+            Console.WriteLine($"ID = {firstStudent.Id}, and Name = {firstStudent.Name} and Passmark = {firstStudent.Passmark}");
         }
     }
 }
