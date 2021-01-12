@@ -1,4 +1,5 @@
 ﻿using System;
+using IntroToCsharp.Services;
 
 
 namespace IntroToCsharp
@@ -86,6 +87,9 @@ namespace IntroToCsharp
             //firstStudent.Passmark = 35;
 
             Console.WriteLine($"ID = {firstStudent.Id}, and Name = {firstStudent.Name} and Passmark = {firstStudent.Passmark}");
+
+            Customer customer = new Customer();
+            customer.Print();
         }
     }
 }
