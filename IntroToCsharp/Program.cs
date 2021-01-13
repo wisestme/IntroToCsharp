@@ -89,6 +89,7 @@ namespace IntroToCsharp
             Console.WriteLine($"ID = {firstStudent.Id}, and Name = {firstStudent.Name} and Passmark = {firstStudent.Passmark}");
 
             Customer customer = new Customer();
+            ((ICustomer)customer).Print();
             ((ISecondCustomer)customer).Print();
         }
     }

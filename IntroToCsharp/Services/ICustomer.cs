@@ -18,9 +18,14 @@ namespace IntroToCsharp.Services
 
     class Customer : ICustomer, ISecondCustomer
     {
-        public void Print()
+        void ICustomer.Print()
         {
             Console.WriteLine("good customer");
+        }
+
+        void ISecondCustomer.Print()
+        {
+            Console.WriteLine("good second customer");
         }
     }
 }
