@@ -11,7 +11,12 @@ namespace IntroToCsharp.Services
         void Print();
     }
 
-    class Customer : ICustomer
+    interface ISecondCustomer
+    {
+        void Print();
+    }
+
+    class Customer : ICustomer, ISecondCustomer
     {
         public void Print()
         {
