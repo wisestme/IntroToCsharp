@@ -78,8 +78,10 @@ namespace IntroToCsharp
         }
         static void Main()
         {
+            
             Comparison checker = new Comparison();
             checker.Comparator();
+            checker.Selector();
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
 

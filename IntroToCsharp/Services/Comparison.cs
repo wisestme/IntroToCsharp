@@ -16,6 +16,19 @@ namespace IntroToCsharp.Services
             bool areEqual = builder == secondBuilder;
             Console.WriteLine(areEqual);
         }
+
+        public void Selector()
+        {
+            int x = 100;
+            if (x == 100)
+            {
+                Console.WriteLine("This is the city called centenary");
+            }
+            else
+            {
+                Console.WriteLine("I don't know what you are talking about");
+            }
+        }
         
     }
 }
