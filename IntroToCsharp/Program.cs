@@ -85,9 +85,11 @@ namespace IntroToCsharp
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
 
-            Student firstStudent = new Student();
-            firstStudent.Id = 100;
-            firstStudent.Name = "Chijioke";
+            Student firstStudent = new Student
+            {
+                Id = 100,
+                Name = "Chijioke"
+            };
             //firstStudent.Passmark = 35;
 
             Console.WriteLine($"ID = {firstStudent.Id}, and Name = {firstStudent.Name} and Passmark = {firstStudent.Passmark}");
