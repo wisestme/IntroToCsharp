@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using IntroToCsharp.Services;
 
 
@@ -69,15 +70,16 @@ namespace IntroToCsharp
     }
 
     
-    class Program
+    public class Program
     {
-        
         static void AnotherMethod()
         {
             Console.WriteLine("Learning C# in another method.");
         }
         static void Main()
         {
+            Comparison checker = new Comparison();
+            checker.Comparator();
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
 
