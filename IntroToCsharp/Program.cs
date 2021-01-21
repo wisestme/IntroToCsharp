@@ -78,6 +78,8 @@ namespace IntroToCsharp
         }
         static void Main()
         {
+            Iteration repeat = new Iteration();
+            repeat.ForLoop();
             
             Comparison checker = new Comparison();
             checker.Comparator();
