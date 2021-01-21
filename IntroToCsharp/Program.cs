@@ -82,6 +82,7 @@ namespace IntroToCsharp
             Comparison checker = new Comparison();
             checker.Comparator();
             checker.Selector();
+            checker.Switcher();
             Console.WriteLine("Learning C# again.");
             AnotherMethod();
 

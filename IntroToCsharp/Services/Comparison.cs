@@ -29,6 +29,25 @@ namespace IntroToCsharp.Services
                 Console.WriteLine("I don't know what you are talking about");
             }
         }
+
+        public void Switcher()
+        {
+            string MyName = "Chijioke";
+
+            switch (MyName)
+            {
+                case "Chijioke":
+                    Console.WriteLine("Chijioke is the original guy!!!");
+                    break;
+                case "Joseph":
+                    Console.WriteLine("Joseph is a programmer");
+                    break;
+                default:
+                    Console.WriteLine("This is the end");
+                    break;
+            }
+            
+        }
         
     }
 }
