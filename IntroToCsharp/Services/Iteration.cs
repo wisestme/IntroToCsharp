@@ -13,7 +13,7 @@ namespace IntroToCsharp.Services
             for (int i = 0; i < 26; i++)
             {
                 if(i == 5)
-                    break;
+                    continue;
                 Console.WriteLine($"Iteration {i}");
             }
         }
