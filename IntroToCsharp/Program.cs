@@ -83,6 +83,7 @@ namespace IntroToCsharp
             repeat.ArrayLooping();
             repeat.ArrayForEach();
             repeat.DoWhile();
+            repeat.WhileLoop();
             
             Comparison checker = new Comparison();
             checker.Comparator();

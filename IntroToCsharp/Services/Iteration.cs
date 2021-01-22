@@ -48,5 +48,15 @@ namespace IntroToCsharp.Services
                 i++;
             } while (i < 5);
         }
+
+        public void WhileLoop()
+        {
+            int i = 0;
+            while (i <= 7)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
+        }
     }
 }
