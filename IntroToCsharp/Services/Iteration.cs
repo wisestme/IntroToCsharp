@@ -38,5 +38,15 @@ namespace IntroToCsharp.Services
                 Console.WriteLine(item);
             }
         }
+
+        public void DoWhile()
+        {
+            int i = 0;
+            do
+            {
+                Console.WriteLine(ArrayItems[i]);
+                i++;
+            } while (i < 5);
+        }
     }
 }
