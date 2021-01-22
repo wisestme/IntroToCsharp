@@ -33,6 +33,8 @@ namespace IntroToCsharp.Services
         {
             foreach (var item in ArrayItems)
             {
+                if(item == 3)
+                    continue;
                 Console.WriteLine(item);
             }
         }
