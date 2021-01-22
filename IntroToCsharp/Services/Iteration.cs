@@ -17,5 +17,15 @@ namespace IntroToCsharp.Services
                 Console.WriteLine($"Iteration {i}");
             }
         }
+
+        public void ArrayLooping()
+        {
+            int[] ArrayItems = {1, 2, 3, 4, 5, 6, 7, 8};
+
+            for (int i = 0; i < ArrayItems.Length; i++)
+            {
+                Console.WriteLine(ArrayItems[i]);
+            }
+        }
     }
 }
