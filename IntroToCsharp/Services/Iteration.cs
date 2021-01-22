@@ -10,8 +10,10 @@ namespace IntroToCsharp.Services
     {
         public void ForLoop()
         {
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 26; i++)
             {
+                if(i == 5)
+                    break;
                 Console.WriteLine($"Iteration {i}");
             }
         }
