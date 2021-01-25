@@ -78,8 +78,8 @@ namespace IntroToCsharp
         }
         static void Main()
         {
-            long l1 = 45;
-            Console.WriteLine(l1.GetType());
+            ExplicitConversion EC = new ExplicitConversion();
+            EC.ExplicitConverter();
             Iteration repeat = new Iteration();
             repeat.ForLoop();
             repeat.ArrayLooping();
