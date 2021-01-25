@@ -78,6 +78,8 @@ namespace IntroToCsharp
         }
         static void Main()
         {
+            ArithmeticOperators ao = new ArithmeticOperators();
+            ao.ArithmeticOperations();
             ExplicitConversion EC = new ExplicitConversion();
             EC.ExplicitConverter();
             Iteration repeat = new Iteration();
