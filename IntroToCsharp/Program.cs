@@ -78,8 +78,8 @@ namespace IntroToCsharp
         }
         static void Main()
         {
-            Type t = (23-50).GetType();
-            Console.WriteLine(t);
+            long l1 = 45;
+            Console.WriteLine(l1.GetType());
             Iteration repeat = new Iteration();
             repeat.ForLoop();
             repeat.ArrayLooping();
