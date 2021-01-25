@@ -10,9 +10,13 @@ namespace IntroToCsharp.Services
     {
         public void ExplicitConverter()
         {
-            short s = 500;
-            byte b = (byte)s;
-            Console.WriteLine(b);
+            checked
+            {
+                short s = 500;
+                byte b = (byte)s;
+                Console.WriteLine(b);
+            }
+           
         }
     }
 }
