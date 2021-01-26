@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
+using IntroToCsharp.Business;
 using IntroToCsharp.Services;
 
 
@@ -78,6 +79,7 @@ namespace IntroToCsharp
         }
         static void Main()
         {
+            VolvoM30 wisestCar = new VolvoM30("Chijioke", "white");
             NumberBaseConverter NBC = new NumberBaseConverter();
             NBC.NumberConverter();
             ArithmeticOperators ao = new ArithmeticOperators();
