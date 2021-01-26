@@ -81,6 +81,11 @@ namespace IntroToCsharp
         {
             VolvoM30 wisestCar = new VolvoM30("Chijioke", "white");
             VolvoM30 yourCar = new VolvoM30("Onah", "black");
+
+            Console.WriteLine(wisestCar.OwnerName);
+            Console.WriteLine(yourCar.OwnerName);
+            Console.WriteLine(yourCar);
+
             NumberBaseConverter NBC = new NumberBaseConverter();
             NBC.NumberConverter();
             ArithmeticOperators ao = new ArithmeticOperators();
