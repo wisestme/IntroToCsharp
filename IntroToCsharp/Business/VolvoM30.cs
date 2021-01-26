@@ -15,6 +15,11 @@ namespace IntroToCsharp.Business
         public int NumberOfDoors;
         public DateTime AssembledDate;
 
+        public VolvoM30(string ownerName, string paintColor)
+        {
+            OwnerName = ownerName;
+            PaintColor = paintColor;
+        }
         public int CalculateFuelForTrip(int TripDistance)
         {
             return TripDistance / GallonsPerMile;
