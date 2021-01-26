@@ -14,11 +14,13 @@ namespace IntroToCsharp.Business
         public int GallonsPerMile = 30;
         public int NumberOfDoors;
         public DateTime AssembledDate;
+        public int ServiceInterval;
 
-        public VolvoM30(string ownerName, string paintColor)
+        public VolvoM30(string ownerName, string paintColor, int serviceInterval)
         {
             OwnerName = ownerName;
             PaintColor = paintColor;
+            ServiceInterval = serviceInterval;
         }
         public int CalculateFuelForTrip(int TripDistance)
         {
