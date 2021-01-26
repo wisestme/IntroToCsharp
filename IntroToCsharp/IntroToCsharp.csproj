@@ -50,6 +50,7 @@
     <Compile Include="Services\ExplicitConversion.cs" />
     <Compile Include="Services\ICustomer.cs" />
     <Compile Include="Services\Iteration.cs" />
+    <Compile Include="Services\NumberBaseConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

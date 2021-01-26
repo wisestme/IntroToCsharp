@@ -78,6 +78,8 @@ namespace IntroToCsharp
         }
         static void Main()
         {
+            NumberBaseConverter NBC = new NumberBaseConverter();
+            NBC.NumberConverter();
             ArithmeticOperators ao = new ArithmeticOperators();
             ao.ArithmeticOperations();
             ExplicitConversion EC = new ExplicitConversion();
