@@ -80,6 +80,7 @@ namespace IntroToCsharp
         static void Main()
         {
             VolvoM30 wisestCar = new VolvoM30("Chijioke", "white");
+            VolvoM30 yourCar = new VolvoM30("Onah", "black");
             NumberBaseConverter NBC = new NumberBaseConverter();
             NBC.NumberConverter();
             ArithmeticOperators ao = new ArithmeticOperators();
