@@ -19,5 +19,13 @@ namespace IntroToCsharp.Business
         {
             return TripDistance / GallonsPerMile;
         }
+
+        public void PrintCarDetails()
+        {
+            Console.WriteLine("------ Car Details -------");
+            Console.WriteLine($"Car owner is {OwnerName}");
+            Console.WriteLine($"Paint colour of car is {PaintColor}");
+            Console.WriteLine($"Car fuel consumption is {GallonsPerMile}");
+        }
     }
 }
