@@ -11,8 +11,13 @@ namespace IntroToCsharp.Business
         public string Type;
         public string OwnerName;
         public string PaintColor;
-        public int GallonsPerMile;
+        public int GallonsPerMile = 30;
         public int NumberOfDoors;
         public DateTime AssembledDate;
+
+        public int CalculateFuelForTrip(int TripDistance)
+        {
+            return TripDistance / GallonsPerMile;
+        }
     }
 }
