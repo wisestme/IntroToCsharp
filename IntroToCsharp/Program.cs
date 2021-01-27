@@ -81,8 +81,8 @@ namespace IntroToCsharp
         {
             EngineSpec wisestEngine = new EngineSpec(250, "Six rings");
 
-            VolvoM30 wisestCar = new VolvoM30("Chijioke", "white");
-            VolvoM30 yourCar = new VolvoM30("Onah", "black");
+            VolvoM30 wisestCar = new VolvoM30("Chijioke", "white", 3);
+            VolvoM30 yourCar = new VolvoM30("Onah", "black", 4);
 
             Console.WriteLine(wisestCar.OwnerName);
             Console.WriteLine(yourCar.OwnerName);
