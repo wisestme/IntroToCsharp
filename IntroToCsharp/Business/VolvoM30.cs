@@ -16,11 +16,11 @@ namespace IntroToCsharp.Business
         public DateTime AssembledDate;
         public int ServiceInterval;
 
-        public VolvoM30(string ownerName, string paintColor, int serviceInterval)
+        public VolvoM30(string ownerName, string paintColor, int serviceInt)
         {
             OwnerName = ownerName;
             PaintColor = paintColor;
-            ServiceInterval = serviceInterval;
+            ServiceInterval = serviceInt;
         }
         public int CalculateFuelForTrip(int TripDistance)
         {
@@ -33,6 +33,7 @@ namespace IntroToCsharp.Business
             Console.WriteLine($"Car owner is {OwnerName}");
             Console.WriteLine($"Paint colour of car is {PaintColor}");
             Console.WriteLine($"Car fuel consumption is {GallonsPerMile}");
+            Console.WriteLine($"Service interval is {ServiceInterval}");
         }
     }
 }
