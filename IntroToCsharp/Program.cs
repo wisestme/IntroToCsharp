@@ -79,6 +79,10 @@ namespace IntroToCsharp
         }
         static void Main()
         {
+            VolvoCar wisestVolvo = new VolvoCar("Chijioke", "red", 20, "wisest atmos");
+            int fuelRequired = wisestVolvo.CalculateFuelForTrip(300);
+            Console.WriteLine($"Fuel required is {fuelRequired} gallons");
+
             EngineSpec wisestEngine = new EngineSpec(250, "Six rings");
 
             VolvoM30 wisestCar = new VolvoM30("Chijioke", "white", wisestEngine);
