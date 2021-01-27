@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IntroToCsharp.Services;
 
 namespace IntroToCsharp.Business
 {
@@ -14,13 +15,13 @@ namespace IntroToCsharp.Business
         public int GallonsPerMile = 30;
         public int NumberOfDoors;
         public DateTime AssembledDate;
-        public int ServiceInterval;
+        public EngineSpec Engine;
 
-        public VolvoM30(string ownerName, string paintColor, int serviceInt)
+        public VolvoM30(string ownerName, string paintColor, EngineSpec engineSpec)
         {
             OwnerName = ownerName;
             PaintColor = paintColor;
-            ServiceInterval = serviceInt;
+            Engine = engineSpec;
         }
         public int CalculateFuelForTrip(int TripDistance)
         {
