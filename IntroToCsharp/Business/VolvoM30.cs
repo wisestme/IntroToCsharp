@@ -34,7 +34,7 @@ namespace IntroToCsharp.Business
             Console.WriteLine($"Car owner is {OwnerName}");
             Console.WriteLine($"Paint colour of car is {PaintColor}");
             Console.WriteLine($"Car fuel consumption is {GallonsPerMile}");
-            Console.WriteLine($"Service interval is {ServiceInterval}");
+            Console.WriteLine($"Engine spec is {Engine}");
         }
     }
 }

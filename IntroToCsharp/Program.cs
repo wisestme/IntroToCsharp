@@ -86,40 +86,40 @@ namespace IntroToCsharp
 
             Console.WriteLine(wisestCar.OwnerName);
             Console.WriteLine(yourCar.OwnerName);
-            Console.WriteLine(yourCar);
+            Console.WriteLine(yourCar.Engine.EngineCapacity);
 
-            NumberBaseConverter NBC = new NumberBaseConverter();
-            NBC.NumberConverter();
-            ArithmeticOperators ao = new ArithmeticOperators();
-            ao.ArithmeticOperations();
-            ExplicitConversion EC = new ExplicitConversion();
-            EC.ExplicitConverter();
-            Iteration repeat = new Iteration();
-            repeat.ForLoop();
-            repeat.ArrayLooping();
-            repeat.ArrayForEach();
-            repeat.DoWhile();
-            repeat.WhileLoop();
+            //NumberBaseConverter NBC = new NumberBaseConverter();
+            //NBC.NumberConverter();
+            //ArithmeticOperators ao = new ArithmeticOperators();
+            //ao.ArithmeticOperations();
+            //ExplicitConversion EC = new ExplicitConversion();
+            //EC.ExplicitConverter();
+            //Iteration repeat = new Iteration();
+            //repeat.ForLoop();
+            //repeat.ArrayLooping();
+            //repeat.ArrayForEach();
+            //repeat.DoWhile();
+            //repeat.WhileLoop();
             
-            Comparison checker = new Comparison();
-            checker.Comparator();
-            checker.Selector();
-            checker.Switcher();
-            Console.WriteLine("Learning C# again.");
-            AnotherMethod();
+            //Comparison checker = new Comparison();
+            //checker.Comparator();
+            //checker.Selector();
+            //checker.Switcher();
+            //Console.WriteLine("Learning C# again.");
+            //AnotherMethod();
 
-            Student firstStudent = new Student
-            {
-                Id = 100,
-                Name = "Chijioke"
-            };
+            //Student firstStudent = new Student
+            //{
+            //    Id = 100,
+            //    Name = "Chijioke"
+            //};
             //firstStudent.Passmark = 35;
 
-            Console.WriteLine($"ID = {firstStudent.Id}, and Name = {firstStudent.Name} and Passmark = {firstStudent.Passmark}");
+            //Console.WriteLine($"ID = {firstStudent.Id}, and Name = {firstStudent.Name} and Passmark = {firstStudent.Passmark}");
 
-            Customer customer = new Customer();
-            ((ICustomer)customer).Print();
-            ((ISecondCustomer)customer).Print();
+            //Customer customer = new Customer();
+            //((ICustomer)customer).Print();
+            //((ISecondCustomer)customer).Print();
         }
     }
 }
