@@ -79,6 +79,8 @@ namespace IntroToCsharp
         }
         static void Main()
         {
+            EngineSpec wisestEngine = new EngineSpec(250, "Six rings");
+
             VolvoM30 wisestCar = new VolvoM30("Chijioke", "white");
             VolvoM30 yourCar = new VolvoM30("Onah", "black");
 
