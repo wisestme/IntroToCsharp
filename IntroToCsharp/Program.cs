@@ -79,8 +79,13 @@ namespace IntroToCsharp
         }
         static void Main()
         {
+            TripPrinter printTrip = new TripPrinter();
+           
+
             VolvoW30 myW30 = new VolvoW30("Nathan", "blue", 20, "Himax");
             myW30.PrintCarDetails();
+
+            printTrip.PrintTripDetails(myW30);
 
             FordWisest myFordWisest = new FordWisest("Wisest", "green", 25, "Alloy reams");
             myFordWisest.PrintCarDetails();
