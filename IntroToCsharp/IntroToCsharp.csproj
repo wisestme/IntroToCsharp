@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Business\Car.cs" />
     <Compile Include="Business\FordCar.cs" />
+    <Compile Include="Business\FordWisest.cs" />
     <Compile Include="Business\VolvoCar.cs" />
     <Compile Include="Business\VolvoM30.cs" />
     <Compile Include="Business\VolvoW30.cs" />
