@@ -80,17 +80,18 @@ namespace IntroToCsharp
         static void Main()
         {
             VolvoCar wisestVolvo = new VolvoCar("Chijioke", "red", 20, "wisest atmos");
+            wisestVolvo.PrintCarDetails();
             int fuelRequired = wisestVolvo.CalculateFuelForTrip(300);
             Console.WriteLine($"Fuel required is {fuelRequired} gallons");
 
-            EngineSpec wisestEngine = new EngineSpec(250, "Six rings");
+            //EngineSpec wisestEngine = new EngineSpec(250, "Six rings");
 
-            VolvoM30 wisestCar = new VolvoM30("Chijioke", "white", wisestEngine);
-            VolvoM30 yourCar = new VolvoM30("Onah", "black", wisestEngine);
+            //VolvoM30 wisestCar = new VolvoM30("Chijioke", "white", wisestEngine);
+            //VolvoM30 yourCar = new VolvoM30("Onah", "black", wisestEngine);
 
-            Console.WriteLine(wisestCar.OwnerName);
-            Console.WriteLine(yourCar.OwnerName);
-            Console.WriteLine(yourCar.Engine.EngineCapacity);
+            //Console.WriteLine(wisestCar.OwnerName);
+            //Console.WriteLine(yourCar.OwnerName);
+            //Console.WriteLine(yourCar.Engine.EngineCapacity);
 
             //NumberBaseConverter NBC = new NumberBaseConverter();
             //NBC.NumberConverter();
