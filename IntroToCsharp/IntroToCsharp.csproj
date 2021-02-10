@@ -53,6 +53,9 @@
     <Compile Include="Business\VolvoM30.cs" />
     <Compile Include="Business\VolvoW30.cs" />
     <Compile Include="Logic\AnotherProduct.cs" />
+    <Compile Include="Logic\Calculator.cs" />
+    <Compile Include="Logic\ProductCustomType.cs" />
+    <Compile Include="Logic\ProductResult.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ArithmeticOperators.cs" />

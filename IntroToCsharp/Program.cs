@@ -80,8 +80,13 @@ namespace IntroToCsharp
         }
         static void Main()
         {
+            ProductCustomType pCT = new ProductCustomType();
+            var CalculationResult = pCT.CalculateProduct(4, 6);
+            
+            Console.WriteLine(CalculationResult.Result);
+
             AnotherProduct anotherProduct = new AnotherProduct();
-            anotherProduct.ItemsInStock = -20;
+            anotherProduct.ItemsInStock = 20;
             anotherProduct.PricePerItem = 5;
 
             Console.WriteLine($"Total stock value is {anotherProduct.GetTotalValueOfStock()}");
