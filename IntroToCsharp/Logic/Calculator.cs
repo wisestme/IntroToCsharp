@@ -8,45 +8,36 @@ namespace IntroToCsharp.Logic
 {
     class Calculator
     {
-        private bool RangeCheck(int num1, int num2)
+        private void RangeCheck(int num1, int num2)
         {
-            return num1 > 0 && num1 < 100 && num2 > 0 && num2 < 100;
-        }
-        public int CalculateProduct(int num1, int num2)
-        {
-            if (RangeCheck(num1, num2))
-            {
-                return num1 * num2;
-            }
-            else
+            if (!(num1 > 0 && num1 < 100 && num2 > 0 && num2 < 100))
             {
                 throw new ArgumentOutOfRangeException();
             }
+        }
+        public int CalculateProduct(int num1, int num2)
+        {
+            RangeCheck(num1, num2);
+            
+            return num1 * num2;
+            
+            
             
         }
 
         public int CalculateSum(int num1, int num2)
         {
-            if (RangeCheck(num1, num2))
-            {
+            RangeCheck(num1, num2);
+            
                 return num1 + num2;
-            }
-            else
-            {
-                throw new ArgumentOutOfRangeException();
-            }
+           
         }
 
         public int CalculateRatio(int num1, int num2)
         {
-            if (RangeCheck(num1, num2))
-            {
-                return num1 / num2;
-            }
-            else
-            {
-                throw  new ArgumentOutOfRangeException();
-            }
+            RangeCheck(num1, num2);
+            return num1 / num2;
+            
         }
     }
 }
