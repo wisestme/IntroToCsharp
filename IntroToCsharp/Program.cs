@@ -80,6 +80,13 @@ namespace IntroToCsharp
         }
         static void Main()
         {
+            Calculator calc = new Calculator();
+            int ProductResult = calc.CalculateProduct(4, 6);
+            int SumResult = calc.CalculateSum(8, 4);
+            int RatioResult = calc.CalculateRatio(12, 6);
+
+            Console.WriteLine($"Sum is {SumResult}, product is {ProductResult} and ratio is {RatioResult}");
+
             ProductCustomType pCT = new ProductCustomType();
             var CalculationResult = pCT.CalculateProduct(4, 6);
             

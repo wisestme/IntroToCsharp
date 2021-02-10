@@ -28,14 +28,15 @@ namespace IntroToCsharp.Logic
         public int CalculateSum(int num1, int num2)
         {
             RangeCheck(num1, num2);
-            
-                return num1 + num2;
+
+            return num1 + num2;
            
         }
 
         public int CalculateRatio(int num1, int num2)
         {
             RangeCheck(num1, num2);
+
             return num1 / num2;
             
         }
