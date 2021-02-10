@@ -46,10 +46,13 @@
     <Compile Include="Business\Car.cs" />
     <Compile Include="Business\FordCar.cs" />
     <Compile Include="Business\FordWisest.cs" />
+    <Compile Include="Business\Goods.cs" />
+    <Compile Include="Business\Supplier.cs" />
     <Compile Include="Business\TripPrinter.cs" />
     <Compile Include="Business\VolvoCar.cs" />
     <Compile Include="Business\VolvoM30.cs" />
     <Compile Include="Business\VolvoW30.cs" />
+    <Compile Include="Logic\AnotherProduct.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ArithmeticOperators.cs" />

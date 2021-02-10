@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
 using IntroToCsharp.Business;
+using IntroToCsharp.Logic;
 using IntroToCsharp.Services;
 
 
@@ -79,6 +80,17 @@ namespace IntroToCsharp
         }
         static void Main()
         {
+            AnotherProduct anotherProduct = new AnotherProduct();
+            anotherProduct.ItemsInStock = -20;
+            anotherProduct.PricePerItem = 5;
+
+            Console.WriteLine($"Total stock value is {anotherProduct.GetTotalValueOfStock()}");
+
+            Goods product1 = new Goods("Laptop", "Emeka Alison");
+           product1.ReadModifyQuantity();
+           product1.itemsInStock = 20;
+           product1.ReadModifyQuantity();
+
             TripPrinter printTrip = new TripPrinter();
            
 
