@@ -24,5 +24,29 @@ namespace IntroToCsharp.Logic
             }
             
         }
+
+        public int CalculateSum(int num1, int num2)
+        {
+            if (RangeCheck(num1, num2))
+            {
+                return num1 + num2;
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+        }
+
+        public int CalculateRatio(int num1, int num2)
+        {
+            if (RangeCheck(num1, num2))
+            {
+                return num1 / num2;
+            }
+            else
+            {
+                throw  new ArgumentOutOfRangeException();
+            }
+        }
     }
 }
