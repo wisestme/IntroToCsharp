@@ -18,6 +18,10 @@ namespace IntroToCsharp.Logic
             };
             
         }
-        
+
+        public void MyTestMethod(ProductResult PR, int count, bool enableOption)
+        {
+            Console.WriteLine($"Int value is {count}");
+        }
     }
 }
