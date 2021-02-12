@@ -9,7 +9,7 @@ namespace Pragim.ImplementClasses
     class Circle
     {
         private int _radius;
-        private float PI = 3.142F;
+        static float PI = 3.142F;
 
         public Circle(int Radius)
         {
@@ -18,7 +18,7 @@ namespace Pragim.ImplementClasses
 
         public float CalculateCircleArea()
         {
-            return this.PI * this._radius * this._radius;
+            return PI * this._radius * this._radius;
         }
     }
 }

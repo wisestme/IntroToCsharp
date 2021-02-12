@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ImplementClasses\Circle.cs" />
     <Compile Include="ImplementClasses\Customer.cs" />
+    <Compile Include="ImplementClasses\Employee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
