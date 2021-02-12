@@ -11,6 +11,13 @@ namespace Pragim
     {
         static void Main(string[] args)
         {
+            PartTimeEmployee PTE = new PartTimeEmployee();
+
+            PTE.LastName = "Nwagwu";
+            PTE.FirstName = "Chijioke";
+
+            PTE.PrintFullName();
+
             Circle myCircle = new Circle(4);
 
             float AreaAnswer = myCircle.CalculateCircleArea();

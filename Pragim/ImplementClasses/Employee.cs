@@ -14,7 +14,7 @@ namespace Pragim.ImplementClasses
 
         public void PrintFullName()
         {
-
+            Console.WriteLine($"{FirstName} {LastName}");
         }
     }
 }
