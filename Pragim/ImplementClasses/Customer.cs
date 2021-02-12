@@ -11,6 +11,10 @@ namespace Pragim.ImplementClasses
         private string _firstName;
         private string _lastName;
 
+        public Customer() : this("", "")
+        {
+
+        }
         public Customer(string FirstName, string LastName)
         {
             _firstName = FirstName;

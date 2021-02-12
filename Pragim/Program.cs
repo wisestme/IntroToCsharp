@@ -12,8 +12,11 @@ namespace Pragim
         static void Main(string[] args)
         {
             Customer myCustomer = new Customer("Chijioke", "Nwagwu");
+            Customer noParameterCustomer = new Customer();
+            
 
             myCustomer.PrintFullName();
+            noParameterCustomer.PrintFullName();
         }
     }
 }
