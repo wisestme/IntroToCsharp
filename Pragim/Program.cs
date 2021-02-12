@@ -11,6 +11,12 @@ namespace Pragim
     {
         static void Main(string[] args)
         {
+            Circle myCircle = new Circle(4);
+
+            float AreaAnswer = myCircle.CalculateCircleArea();
+            Console.WriteLine(AreaAnswer);
+
+
             Customer myCustomer = new Customer("Chijioke", "Nwagwu");
             Customer noParameterCustomer = new Customer();
             
