@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToCsharp", "IntroToCsh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.BL", "ACME.BL\ACME.BL.csproj", "{F79644D4-947D-44F8-9EBB-E119857F5BE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pragim", "Pragim\Pragim.csproj", "{FBEEEDEE-6941-4669-A929-7AD9D984CBB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F79644D4-947D-44F8-9EBB-E119857F5BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F79644D4-947D-44F8-9EBB-E119857F5BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F79644D4-947D-44F8-9EBB-E119857F5BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBEEEDEE-6941-4669-A929-7AD9D984CBB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBEEEDEE-6941-4669-A929-7AD9D984CBB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBEEEDEE-6941-4669-A929-7AD9D984CBB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBEEEDEE-6941-4669-A929-7AD9D984CBB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

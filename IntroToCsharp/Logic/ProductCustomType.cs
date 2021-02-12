@@ -23,5 +23,17 @@ namespace IntroToCsharp.Logic
         {
             Console.WriteLine($"Int value is {count}");
         }
+
+        public void AnotherTestMethod(Person employee, int count)
+        {
+            
+            Console.WriteLine($"My method parameters are {employee.Name} and {count}");
+
+            employee = new Person("Chijioke");
+            count = 20;
+
+            Console.WriteLine($"My modified method parameters are {employee.Name} and {count}");
+
+        }
     }
 }

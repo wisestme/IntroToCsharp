@@ -80,6 +80,19 @@ namespace IntroToCsharp
         }
         static void Main()
         {
+            
+
+            
+            Person myPerson = new Person("Jhonny");
+            int myCount = 10;
+
+            Console.WriteLine($"Variable values before are {myPerson.Name} and {myCount}");
+
+            ProductCustomType pCT = new ProductCustomType();
+            pCT.AnotherTestMethod(myPerson, myCount);
+
+            Console.WriteLine($"Variable values after are {myPerson.Name} and {myCount}");
+
             Calculator calc = new Calculator();
             int ProductResult = calc.CalculateProduct(4, 6);
             int SumResult = calc.CalculateSum(8, 4);
@@ -87,7 +100,7 @@ namespace IntroToCsharp
 
             Console.WriteLine($"Sum is {SumResult}, product is {ProductResult} and ratio is {RatioResult}");
 
-            ProductCustomType pCT = new ProductCustomType();
+           
             var CalculationResult = pCT.CalculateProduct(4, 6);
             
             Console.WriteLine(CalculationResult.Result);
