@@ -13,10 +13,10 @@ namespace Pragim
         {
             PartTimeEmployee PTE = new PartTimeEmployee();
 
-            PTE.LastName = "Nwagwu";
-            PTE.FirstName = "Chijioke";
+            //PTE.LastName = "Nwagwu";
+            //PTE.FirstName = "Chijioke";
 
-            PTE.PrintFullName();
+            //PTE.PrintFullName();
 
             Circle myCircle = new Circle(4);
 

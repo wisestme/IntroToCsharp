@@ -9,5 +9,12 @@ namespace Pragim.ImplementClasses
     class PartTimeEmployee : Employee
     {
         private float YearlySalary;
+
+        public PartTimeEmployee() : base()
+        {
+
+        }
     }
+
+    
 }

@@ -12,6 +12,15 @@ namespace Pragim.ImplementClasses
         public string LastName;
         public string Email;
 
+        public Employee()
+        {
+            Console.WriteLine("Parent class constructor called");
+        }
+
+        public Employee(string message)
+        {
+            Console.WriteLine(message);
+        }
         public void PrintFullName()
         {
             Console.WriteLine($"{FirstName} {LastName}");
