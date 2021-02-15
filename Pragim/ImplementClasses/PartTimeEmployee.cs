@@ -10,9 +10,15 @@ namespace Pragim.ImplementClasses
     {
         private float YearlySalary;
 
-        public PartTimeEmployee() : base()
+        public PartTimeEmployee() : base("Inheritance test")
         {
 
+        }
+
+        public new void PrintFullName()
+        {
+            Console.WriteLine($"{FirstName} {LastName} -PTE");
+            
         }
     }
 
