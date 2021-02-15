@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Pragim.ImplementClasses
 {
-    class TemporaryEmployee : Employee
+    public class TemporaryEmployee : Employee
     {
+        public override void PrintFullName()
+        {
+            Console.WriteLine($"{FirstName} {LastName} Temporary");
+
+        }
     }
 }

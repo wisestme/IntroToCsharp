@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace Pragim.ImplementClasses
 {
-    class Employee
+    public class Employee
     {
-        public string FirstName;
-        public string LastName;
+        public string FirstName = "Chijioke";
+        public string LastName = "Nwagwu";
         public string Email;
 
-        public Employee()
-        {
-            Console.WriteLine("Parent class constructor called");
-        }
+        //public Employee()
+        //{
+        //    Console.WriteLine("Parent class constructor called");
+        //}
 
-        public Employee(string message)
-        {
-            Console.WriteLine(message);
-        }
-        public void PrintFullName()
+        //public Employee(string message)
+        //{
+        //    Console.WriteLine(message);
+        //}
+        public virtual void PrintFullName()
         {
             Console.WriteLine($"{FirstName} {LastName}");
 

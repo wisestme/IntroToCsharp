@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace Pragim.ImplementClasses
 {
-    class FullTimeEmployee : Employee
+    public class FullTimeEmployee : Employee
     {
         private float YearlySalary;
+
+        public override void PrintFullName()
+        {
+            Console.WriteLine($"{FirstName} {LastName} Full Time");
+
+        }
     }
 }

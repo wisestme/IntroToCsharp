@@ -11,9 +11,8 @@ namespace Pragim
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee();
-            employee.FirstName = "Chijioke";
-            employee.LastName = "Nwagwu";
+            
+            
 
             Employee[] employees = new Employee[4];
             employees[0] = new Employee();
@@ -23,7 +22,7 @@ namespace Pragim
 
             foreach (var emp in employees)
             {
-                employee.PrintFullName();
+                emp.PrintFullName();
             }
 
             Circle myCircle = new Circle(4);

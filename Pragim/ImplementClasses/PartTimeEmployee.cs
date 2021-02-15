@@ -6,19 +6,18 @@ using System.Threading.Tasks;
 
 namespace Pragim.ImplementClasses
 {
-    class PartTimeEmployee : Employee
+    public class PartTimeEmployee : Employee
     {
         private float YearlySalary;
 
-        public PartTimeEmployee() : base("Inheritance test")
-        {
+        //public PartTimeEmployee() : base("Inheritance test")
+        //{
 
-        }
+        //}
 
-        public new void PrintFullName()
+        public override void PrintFullName()
         {
-            Console.WriteLine($"{FirstName} {LastName} -PTE");
-            
+            Console.WriteLine($"{FirstName} {LastName} Part Time");
         }
     }
 
