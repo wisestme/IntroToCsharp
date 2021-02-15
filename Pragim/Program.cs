@@ -11,12 +11,20 @@ namespace Pragim
     {
         static void Main(string[] args)
         {
-            PartTimeEmployee PTE = new PartTimeEmployee();
+            Employee employee = new Employee();
+            employee.FirstName = "Chijioke";
+            employee.LastName = "Nwagwu";
 
-            PTE.LastName = "Nwagwu";
-            PTE.FirstName = "Chijioke";
+            Employee[] employees = new Employee[4];
+            employees[0] = new Employee();
+            employees[1] = new FullTimeEmployee();
+            employees[2] = new PartTimeEmployee();
+            employees[3] = new TemporaryEmployee();
 
-            ((Employee)PTE).PrintFullName();
+            foreach (var emp in employees)
+            {
+                employee.PrintFullName();
+            }
 
             Circle myCircle = new Circle(4);
 
