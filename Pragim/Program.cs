@@ -15,6 +15,7 @@ namespace Pragim
         {
             Customer C1 = new Customer();
             C1.Print();
+            C1.SecondPrint();
             
 
             Employee[] employees = new Employee[4];
