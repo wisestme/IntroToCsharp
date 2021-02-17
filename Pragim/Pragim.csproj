@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arithmetic\Adder.cs" />
     <Compile Include="ImplementClasses\Circle.cs" />
     <Compile Include="ImplementClasses\Customer.cs" />
     <Compile Include="ImplementClasses\Employee.cs" />
