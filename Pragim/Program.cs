@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Pragim.ImplementClasses;
+using Pragim.Interfaces;
+using Customer = Pragim.Interfaces.Customer;
 
 namespace Pragim
 {
@@ -11,7 +13,8 @@ namespace Pragim
     {
         static void Main(string[] args)
         {
-            
+            Customer C1 = new Customer();
+            C1.Print();
             
 
             Employee[] employees = new Employee[4];
@@ -31,12 +34,12 @@ namespace Pragim
             Console.WriteLine(AreaAnswer);
 
 
-            Customer myCustomer = new Customer("Chijioke", "Nwagwu");
-            Customer noParameterCustomer = new Customer();
+            //Customer myCustomer = new Customer("Chijioke", "Nwagwu");
+            //Customer noParameterCustomer = new Customer();
             
 
-            myCustomer.PrintFullName();
-            noParameterCustomer.PrintFullName();
+            //myCustomer.PrintFullName();
+            //noParameterCustomer.PrintFullName();
         }
     }
 }
