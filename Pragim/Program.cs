@@ -13,6 +13,9 @@ namespace Pragim
     {
         static void Main(string[] args)
         {
+            ThirdClass thirdClass = new ThirdClass();
+            thirdClass.Print();
+            thirdClass.SecondPrint();
             Customer C1 = new Customer();
             C1.Print();
             ((ISecondCustomer)C1).Print();

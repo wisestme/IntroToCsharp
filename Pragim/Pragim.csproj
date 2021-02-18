@@ -51,6 +51,7 @@
     <Compile Include="ImplementClasses\PartTimeEmployee.cs" />
     <Compile Include="ImplementClasses\TemporaryEmployee.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
+    <Compile Include="Interfaces\IMultipleInterfaceInheritance.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
