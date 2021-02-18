@@ -14,9 +14,8 @@ namespace Pragim
         static void Main(string[] args)
         {
             Customer C1 = new Customer();
-            C1.Print();
-            C1.SecondPrint();
-            
+            ((ICustomer)C1).Print();
+            ((ISecondCustomer)C1).Print();
 
             Employee[] employees = new Employee[4];
             employees[0] = new Employee();
