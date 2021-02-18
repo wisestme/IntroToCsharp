@@ -19,7 +19,7 @@ namespace Pragim.Interfaces
 
     class Customer : ICustomer, ISecondCustomer
     {
-        void ICustomer.Print()
+        public void Print()
         {
             Console.WriteLine("Interface print method");
         }
